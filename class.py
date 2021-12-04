@@ -76,9 +76,9 @@ class Test(unittest.TestCase):
         logo.click()
         time.sleep(5)
 
-basedir = "D:/web/nocodenolife/2021_selenium"
+basedir = "D:/auto_test/2021_selenium"
 if __name__ == '__main__':
     test_suite = unittest.defaultTestLoader.discover(basedir, pattern='*.py')
     result = BeautifulReport(test_suite)
-    result.report(filename='report',description='我的第一個測試', log_path='D:/web/nocodenolife/2021_selenium')
+    result.report(filename='report',description='我的第一個測試', log_path='D:/auto_test/2021_selenium')
                  

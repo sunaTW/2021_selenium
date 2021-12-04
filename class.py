@@ -23,6 +23,7 @@ class Test(unittest.TestCase):
     def setUpClass(self):
         self.driver = webdriver.Chrome(chrome_options=options)
         self.action = ActionChains(self.driver)
+        ## 前往 YOUTUBE
         self.URL = "https://youtube.com"
         self.driver.get(self.URL)
         self.driver.maximize_window()
